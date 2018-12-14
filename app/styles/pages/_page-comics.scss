@@ -1,0 +1,38 @@
+.page-comics {
+
+  .page-comics-title {
+    @include font-comic(36px, 36px, $white);
+    margin: 30 0;
+  }
+
+  .page-comics-container {
+
+    margin: 0 -10px;
+
+    @include flexbox();
+    flex-wrap: wrap;
+
+    > * {
+      width: 100%;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      >* {
+        width: 50%;
+      }
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      >* {
+        width: 33.33%;
+      }
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      >* {
+        width: 25%;
+      }
+    }
+  }
+
+}

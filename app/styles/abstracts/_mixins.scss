@@ -23,6 +23,13 @@
   color: $color;
 }
 
+// Shadow
+@mixin shadow($x, $y, $blur, $opacity) {
+  -webkit-box-shadow: $x $y $blur 0px rgba(0, 0, 0, $opacity);
+  -moz-box-shadow: $x $y $blur 0px rgba(0, 0, 0, $opacity);
+  box-shadow: $x $y $blur 0px rgba(0, 0, 0, $opacity);
+}
+
 // Flexbox
 @mixin flexbox() {
   display: -webkit-box;

@@ -1,0 +1,41 @@
+.comic-box {
+  margin-bottom: 20px;
+  padding: 0 10px;
+
+  .comic-box-container {
+    background-color: $gray-strong;
+    padding: 20px;
+    border-radius: $border-radius;
+    text-align: center;
+
+    transition: .2s;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .comic-box__img {
+    display: block;
+    width: 100%;
+  }
+
+  .comic-box-title {
+    @include font-comic(28px, 28px, $white);
+    text-align: center;
+    margin: 10px auto;
+
+    height: 84px;
+  }
+
+  .comic-box-price {
+    display: inline-block;
+    @include font-default-semibold(18px, 18px, $black);
+    margin: 10px 0 0;
+
+    background-color: $yellow;
+    padding: 10px;
+    border-radius: $border-radius;
+  }
+}
