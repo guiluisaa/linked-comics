@@ -5,11 +5,14 @@
   <br>
   Title:{{comic.title}}
   <br>
+  <br>
+  {{comic.description}}
+  <br>
+  <br>
   {{#link-to 'comics.show' comic}}
     Show Comic
   {{/link-to}}
   <br>
   <img src="{{comic.thumbnail.path}}/portrait_uncanny.{{comic.thumbnail.extension}}" alt="">
+  <br>
 {{/each}}
-
-{{log model}}
