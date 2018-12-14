@@ -2,6 +2,8 @@
 
 Linked Gourmet Job Test
 
+Live App [here](https://linked-comics.herokuapp.com/)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
