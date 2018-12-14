@@ -1,5 +1,11 @@
 {{l-header}}
 
+{{#if feedback.show}}
+  {{feedback-top
+    feedback=feedback
+  }}
+{{/if}}
+
 <main class="main">
   <div class="container">
     {{outlet}}

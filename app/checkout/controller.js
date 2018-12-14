@@ -4,6 +4,7 @@ import { inject as service } from '@ember/service';
 export default Controller.extend({
 
   checkoutCart: service(),
+  feedback: service(),
 
   actions: {
 
@@ -16,6 +17,12 @@ export default Controller.extend({
 
     applyPromotionalCode(code) {
       this.checkoutCart.applyPromotionalCode(code);
+    },
+
+    finalizeOrder() {      
+      this.feedback.throwFeedback('success', 'Successful Purchase');
+      this.checkoutCart.resetCart();
+      this.transitionToRoute('index');
     }
   }
 });
