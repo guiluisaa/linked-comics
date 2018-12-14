@@ -1,7 +1,6 @@
 # linked-comics
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Linked Gourmet Job Test
 
 ## Prerequisites
 
@@ -9,6 +8,7 @@ You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with npm)
+* [Yarn](https://yarnpkg.com/)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
@@ -16,42 +16,27 @@ You will need the following things properly installed on your computer.
 
 * `git clone <repository-url>` this repository
 * `cd linked-comics`
-* `npm install`
+* `yarn`
 
 ## Running / Development
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+<!-- * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests). -->
 
 ### Building
 
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## Funcionamento
 
-Specify what it takes to deploy your app.
+Ao abrir a App ([http://localhost:4200](http://localhost:4200)) é carregado a página principal, onde os quadrinhos são carregados. Clicando em um quadrinho, você irá ára a página de detalhes dele, onde poderar adicioná-lo ao carrinho de compra.
 
-## Further Reading / Useful Links
+Aleatóriamente, 10% dos quadrinhos são marcados com um ícone de diamante, indicando que ele é um quadrinho raro.
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+Clicando no ícone de carrinho de compras no header, você verá um resumo dos ítens já adicionados. Essa janela também possui um botão que leva para o chackout.
+
+Na página de checkout você pode adicionar um cupom de desconto que te dará 10% de desconto no valor total da compra.
+
+Depois disso, é só finalizar a compra e voltar à home.
