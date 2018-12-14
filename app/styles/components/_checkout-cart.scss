@@ -11,6 +11,14 @@
   padding: 20px;
   border-radius: $border-radius;
 
+  @media (min-width: $breakpoint-sm) {
+    max-width: 350px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 400px;
+  }
+
   @include shadow(0px, 8px, 10px, .6);
 
   .checkout-cart__ul {

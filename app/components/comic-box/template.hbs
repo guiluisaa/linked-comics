@@ -1,5 +1,5 @@
 {{#link-to 'comics.show' comic}}    
-  <div class="comic-box-container">
+  <div class="comic-box-container {{if comic.isRare 'is-rare'}}">
     <img class="comic-box__img" src={{concat comic.thumbnail.path '/portrait_uncanny.' comic.thumbnail.extension}} alt={{comic.title}}>
     <h3 class="comic-box-title">{{comic.title}}</h3>
     <p class="comic-box-price">$ {{comic.prices.0.price}}</p>

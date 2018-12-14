@@ -1,1 +1,46 @@
-{{outlet}}
+<div class="page-checkout">
+
+  <h2 class="page-checkout-title">Checkout</h2>
+
+  <table class="checkout__table">
+    <tbody>
+      {{#each model as |item|}}
+        <tr class="checkout__tr">
+          <td class="{{if item.isRare 'is-rare'}}">
+            <img class="checkout-item__img" src={{concat item.thumbnail.path '/portrait_medium.' item.thumbnail.extension}} alt={{item.title}}>
+          </td>
+          <td>
+            {{item.title}}
+            <a class="checkout-item-remove" href="" {{action "removeItem" item}}>Remove Item</a>
+          </td>
+          <td>${{item.prices.0.price}}</td>
+        </tr>
+      {{/each}}
+      <tr class="checkout-subtotal__tr">
+        <td colspan="2">Subtotal</td>
+        <td>${{checkoutCart.subtotal}}</td>
+      </tr>
+      <tr class="checkout-subtotal__tr">
+        <td colspan="2">Discount</td>
+        <td>${{checkoutCart.discount}}</td>
+      </tr>
+      <tr class="checkout-subtotal__tr">
+        <td colspan="2">Total</td>
+        <td>${{checkoutCart.total}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="page-checkout-footer">
+
+    <form {{action "applyPromotionalCode" promotionalCode on="submit"}} class="promotional-code">
+      {{input value=promotionalCode class="promotional-code__input" placeholder="Code (COMICS10)"}}
+      <button type="submit" class="btn btn-sm">Apply</button>
+    </form>
+
+    <button type="button" class="btn btn-checkout" disabled={{eq checkoutCart.items.length 0}}>Pay and Checkout</button>
+
+  </div>
+
+
+</div>

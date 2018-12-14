@@ -1,0 +1,127 @@
+.page-checkout {
+  margin: 30px 0;
+
+  .page-checkout-title {
+    @include font-comic(36px, 36px, $white);
+    margin: 30 0;
+  }
+
+  .checkout__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    .checkout__tr {
+
+      td {
+        background-color: $grey-strong;
+        @include font-default-regular(13px, 15px, $white);
+        vertical-align: middle;
+
+        border: solid 1px $grey-light;
+
+        .checkout-item-remove {
+          color: inherit;
+          display: block;
+          margin-top: 8px;
+        }
+
+        &:not(:first-child) {
+          padding: 20px;
+        }
+
+        &:first-child {
+          padding: 0;
+
+          @include is-rare();
+        }
+
+        &:last-child {
+          text-align: right;
+        }
+
+        &:first-child,
+        .checkout-item__img {
+          width: 100px;
+          height: 150px;
+        }
+
+        .checkout-item__img {
+          margin-bottom: -3px;
+        }
+      }
+    }
+    
+    .checkout-subtotal__tr {
+
+      td {
+        background-color: $grey-strong;
+        @include font-default-regular(13px, 15px, $white);
+        vertical-align: middle;
+
+        border: solid 1px $grey-light;        
+        padding: 20px;
+
+        &:first-child {
+          text-align: right;
+        }
+
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .page-checkout-footer {
+    margin-top: 30px;
+  }
+
+  .promotional-code {
+    width: 100%;
+    @include flexbox();
+
+    .promotional-code__input {
+      @include font-default-regular(18px, 18px, $white);
+      background-color: $grey-light;
+      border: none;
+      border-radius: $border-radius;
+      height: $btn-height;
+      width: inherit;
+      padding: 0 16px;
+
+      vertical-align: bottom;
+
+      @include placeholder($grey-strong);
+    }
+
+    .btn {
+      background-color: $yellow;
+      border-color: $yellow;
+      flex-grow: 1;
+
+      margin-left: 5px;
+    }
+  }
+
+  .btn-checkout {
+    width: 100%;
+    height: 56px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+
+   .page-checkout-footer {
+     @include flexbox();
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .promotional-code,
+   .btn-checkout {
+     width: auto;
+     margin-top: 0;     
+   }
+   
+  }
+}

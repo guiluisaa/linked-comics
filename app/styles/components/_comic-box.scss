@@ -9,6 +9,8 @@
     text-align: center;
 
     transition: .2s;
+
+    @include is-rare();
   }
 
   a {
