@@ -38,7 +38,7 @@
       <button type="submit" class="btn btn-sm">Apply</button>
     </form>
 
-    <button type="button" class="btn btn-checkout" disabled={{eq checkoutCart.items.length 0}}>Pay and Checkout</button>
+    <button type="button" {{action "finalizeOrder"}} class="btn btn-checkout" disabled={{eq checkoutCart.items.length 0}}>Pay and Checkout</button>
 
   </div>
 
