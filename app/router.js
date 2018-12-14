@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('comics', function() {
     this.route('show', { path: '/:comic_id' });
   });
+  this.route('checkout');
 });
 
 export default Router;

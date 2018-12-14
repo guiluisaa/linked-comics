@@ -5,17 +5,21 @@
 
   @include btn-reset();
 
-  @include font-comic($btn-font-size, $btn-line-height, $btn-color);
+  @include font-default-semibold($btn-font-size, $btn-line-height, $btn-color);
   text-align: center;
 
   background-color: $btn-bg-color;
   border: solid 1px $btn-border-color;
   border-radius: $border-radius;
 
-  height: $btn-line-height;
+  height: $btn-height;
   padding: 0 16px;
   min-width: 100px;
 
   transition: .15s;
   cursor: pointer;
+
+  &.btn-sm {
+    font-size: 12px;
+  }
 }

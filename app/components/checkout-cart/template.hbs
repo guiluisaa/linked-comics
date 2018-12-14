@@ -1,0 +1,25 @@
+<div class="checkout-cart">
+
+  <ul class="checkout-cart__ul">
+    {{#each items as |item|}}
+      <li class="checkout-cart-item">
+        <img class="checkout-cart-item__img" src={{concat item.thumbnail.path '/portrait_small.' item.thumbnail.extension}} alt={{item.title}}>
+        <div class="checkout-cart-item-text-container">
+          <h5 class="checkout-cart-item-title">{{item.title}}</h5>
+          <p class="checkout-cart-item-price">$ {{item.prices.0.price}}</p>
+          <a class="checkout-cart-item-remove" href="" {{action "removeItem" item}}>Remove Item</a>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+
+  <div class="checkout-cart-btn-container">
+
+    <p class="checkout-cart-btn-container__p">$ {{checkoutCart.subtotal}}</p>
+
+    <button {{action "toCheckout"}} class="btn btn-sm">
+      Proceed to checkout
+    </button>
+  </div>
+
+</div>
