@@ -1,0 +1,15 @@
+<header class="l-header">
+  <div class="container">
+    <div class="l-header-content">
+
+      {{#link-to 'index' class='l-header-logo__link'}}
+        <img src="/images/logo.svg" alt="Linked Comics" class="l-header-logo__img">
+      {{/link-to}}
+
+      <a {{action 'toggleCart'}} class="l-header-cart__link">
+        <img src="/images/cart.svg" alt="Linked Comics" class="l-header-cart__img">
+      </a>
+
+    </div>
+  </div>
+</header>

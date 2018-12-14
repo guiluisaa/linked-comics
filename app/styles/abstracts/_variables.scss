@@ -14,6 +14,14 @@ $gray-light: #757575;
 $red: #E74C3C;
 $green: #1BAC2A;
 
+// Breakpoints
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// z-index
+$z-index-header: 1000;
+
 // Others
 $border-radius: 3px;
 
@@ -30,7 +38,9 @@ $btn-border-color: $green;
 $btn-border-radius: $border-radius;
 
 // Header variables
+$header-height: 86px;
 $header-bg-color: $red;
 $header-padding-y-sm: 16px; 
 $header-padding-y-lg: 20px;
-$header-logo-height: 78px;
+$header-logo-height: 64px;
+$header-cart-height: 36px;

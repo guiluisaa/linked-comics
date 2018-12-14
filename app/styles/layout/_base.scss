@@ -1,0 +1,19 @@
+html, body {
+  font-family: $font-family-default;
+  color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: scroll;
+  background: $black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  padding-top: $header-height;
+}

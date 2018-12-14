@@ -1,0 +1,39 @@
+.l-header {
+  background: $header-bg-color;
+  position: fixed;
+  z-index: $z-index-header;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  .l-header-content {
+    height: $header-height;
+    margin: 0;
+
+    @include flexbox();
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .l-header-logo__link,
+  .l-header-logo__img {
+    display: inline-block;
+    height: $header-logo-height;
+    width: auto;
+  }
+
+  .l-header-logo__link {
+    vertical-align: middle;    
+  }
+
+  .l-header-cart__link,
+  .l-header-cart__img {
+    display: inline-block;
+    height: $header-cart-height;
+    width: auto;
+  }
+
+  .l-header-cart__link {
+    cursor: pointer;
+  }
+}
