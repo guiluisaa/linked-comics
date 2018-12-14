@@ -1,0 +1,40 @@
+// Fonts
+@mixin font-comic($font-size, $line-height, $color) {
+  font-family: $font-family-comic;
+  font-weight: $font-weight-regular;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin font-default-regular($font-size, $line-height, $color) {
+  font-family: $font-family-default;
+  font-weight: $font-weight-regular;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin font-default-semibold($font-size, $line-height, $color) {
+  font-family: $font-family-default;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+// Flexbox
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// Buttons
+@mixin btn-reset() {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}

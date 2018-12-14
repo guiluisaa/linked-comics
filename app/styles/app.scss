@@ -1,3 +1,26 @@
+/*
+*
+* Linked Comics
+*
+*/
+
+@charset 'UTF-8';
+// Font
+@import url('https://fonts.googleapis.com/css?family=Bangers|Open+Sans:400,600');
+
+// Vendors
 @import "ember-cli-bootstrap-4/bootstrap-grid";
-// Import font
-@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Layout
+@import 'layout/base';
+@import 'layout/header';
+
+// Components
+@import 'components/btn';
+
+// Pages
+// @import 'pages/some-page';

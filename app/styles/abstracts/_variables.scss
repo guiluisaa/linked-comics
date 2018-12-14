@@ -1,0 +1,36 @@
+// Font Family
+$font-family-comic: 'Bangers', cursive;
+$font-family-default: 'Open Sans', sans-serif;
+
+// Font Weight
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+
+// Colors
+$white: #FFF;
+$black: #212121;
+$gray-strong: #424242;
+$gray-light: #757575;
+$red: #E74C3C;
+$green: #1BAC2A;
+
+// Others
+$border-radius: 3px;
+
+// Buttons
+$btn-height: 38px;
+
+$btn-font-size: 24px;
+$btn-line-height: $btn-height;
+$btn-color: $white;
+
+$btn-bg-color: $green;
+$btn-border-color: $green;
+
+$btn-border-radius: $border-radius;
+
+// Header variables
+$header-bg-color: $red;
+$header-padding-y-sm: 16px; 
+$header-padding-y-lg: 20px;
+$header-logo-height: 78px;

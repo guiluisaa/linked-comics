@@ -1,0 +1,21 @@
+.btn {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+
+  @include btn-reset();
+
+  @include font-comic($btn-font-size, $btn-line-height, $btn-color);
+  text-align: center;
+
+  background-color: $btn-bg-color;
+  border: solid 1px $btn-border-color;
+  border-radius: $border-radius;
+
+  height: $btn-line-height;
+  padding: 0 16px;
+  min-width: 100px;
+
+  transition: .15s;
+  cursor: pointer;
+}
