@@ -9,10 +9,10 @@
   {{comic.description}}
   <br>
   <br>
-  {{#link-to 'comics.show' comic class='btn'}}
+  {{#link-to "comics.show" comic class="btn"}}
     Buy
   {{/link-to}}
   <br>
-  <img src="{{comic.thumbnail.path}}/portrait_uncanny.{{comic.thumbnail.extension}}" alt="">
+  <img src="{{comic.thumbnail.path}}/portrait_uncanny.{{comic.thumbnail.extension}}" alt="{{comic.title}}">
   <br>
 {{/each}}
