@@ -22,11 +22,11 @@
   }
 
   .comic-box-title {
-    @include font-comic(28px, 28px, $white);
+    @include font-comic(24px, 24px, $white);
     text-align: center;
     margin: 10px auto;
 
-    height: 84px;
+    height: 72px;
   }
 
   .comic-box-price {

@@ -1,6 +1,19 @@
-id:{{model.id}}
-<br>
-Title:{{model.title}}
-<br>
-<br>
-<img src="{{model.thumbnail.path}}/portrait_uncanny.{{model.thumbnail.extension}}" alt={{model.title}}>
+<div class="page-comics-show">
+
+  <img class="page-comics-show__img" src={{concat model.thumbnail.path '/portrait_uncanny.' model.thumbnail.extension}} alt={{model.title}}>
+  
+  <div class="page-comics-show-container">
+
+    <div class="page-comics-show-content">
+      <h3 class="page-comics-show-title">{{model.title}}</h3>
+      <p class="page-comics-show-description">{{{model.description}}}</p>
+    </div>
+
+    <div class="page-comics-show-price-btn-container">
+      <p class="page-comics-show-price">$ {{model.prices.0.price}}</p>
+      <button {{action "addToCart"}} class="btn d-block">Buy Now</button>
+    </div>
+
+  </div>
+
+</div>
