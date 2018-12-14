@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('comics', function() {
+    this.route('show', { path: '/:comic_id' });
+  });
 });
 
 export default Router;

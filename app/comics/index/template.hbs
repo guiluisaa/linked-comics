@@ -1,0 +1,15 @@
+<h2>Comics</h2>
+
+{{#each model as |comic|}}
+  id:{{comic.id}}
+  <br>
+  Title:{{comic.title}}
+  <br>
+  {{#link-to 'comics.show' comic}}
+    Show Comic
+  {{/link-to}}
+  <br>
+  <img src="{{comic.thumbnail.path}}/portrait_uncanny.{{comic.thumbnail.extension}}" alt="">
+{{/each}}
+
+{{log model}}

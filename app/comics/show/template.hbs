@@ -1,0 +1,9 @@
+id:{{model.id}}
+<br>
+Title:{{model.title}}
+<br>
+{{#link-to 'comics.show' comic}}
+Show Comic
+{{/link-to}}
+<br>
+<img src="{{model.thumbnail.path}}/portrait_uncanny.{{model.thumbnail.extension}}" alt="">
